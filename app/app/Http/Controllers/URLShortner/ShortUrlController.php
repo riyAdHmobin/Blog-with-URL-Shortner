@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\URLShortner;
 
 use App\Http\Controllers\Controller;
-use App\Models\URLShortner\ShortUrl;
+use App\Models\ShortUrl;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
