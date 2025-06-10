@@ -11,6 +11,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/blogs', function () {
+    return view('blogs');
+});
+
 
 Route::prefix('url-shortner')->group(function () {
     Route::get('/', [ShortUrlController::class, 'index'])->name('url.shortener');
