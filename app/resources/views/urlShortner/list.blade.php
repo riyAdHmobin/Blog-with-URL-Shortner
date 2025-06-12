@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Blogs</h1>
+                    <h1 class="m-0">Shortened URLs</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -21,11 +21,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <!-- Small boxes (Stat box) -->
-            <h1>Shortened URLs</h1>
-            <a href="{{ route('url.shortener') }}">← Back to Shortener</a>
-
-            <table border="1" cellpadding="8" cellspacing="0">
+            <table border="1" cellpadding="8" cellspacing="0" class="table table-bordered table-hover">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -51,6 +47,7 @@
                 @endforelse
                 </tbody>
             </table>
+{{--            <a href="{{ route('url.shortener') }}">← Back to Shortener</a>--}}
 
             {{ $urls->links() }} <!-- Pagination -->
             <!-- /.row -->
